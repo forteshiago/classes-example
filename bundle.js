@@ -59,8 +59,16 @@ var Vingador = /*#__PURE__*/function (_Pessoa) {
   return Vingador;
 }(Pessoa);
 
-var thor = new Vingador("Thor", "1.85", "100kg", ["Deus do Trovão", "Super força", "Vôo", "Longevidade"], true, true, false);
+var thor = new Vingador("Thor", "1.85", "100kg", ["Deus do Trovão", "Super força", "Vôo", "Longevidade"], true, //tem armadura?
+true, //tem arma?
+true, //e membro fundador?
+false);
+var spider = new Vingador("Spider-man", "1.70", "70kg", ["Disparadores de teia", "Modo de reconhecimento", "Sentido Aranha", "Força sobre-humana"], true, true, false, false);
 
-document.getElementById("lutar").onclick = function () {
+document.getElementById("thor").onclick = function () {
   thor.lutar();
+};
+
+document.getElementById("spider").onclick = function () {
+  spider.lutar();
 };

@@ -10,5 +10,7 @@
   },
   "scripts": {
     "dev": "babel ./main.js -o ./bundle.js -w"
-  }
+  },
+  "repository": "https://github.com/forteshiago/classes-example.git",
+  "author": "forteshiago <forteshiago@hotmail.com>"
 }
